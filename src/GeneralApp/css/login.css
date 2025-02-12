@@ -1,0 +1,111 @@
+/* Estilos generales */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../assets/fondo-login/Designer-login.jpeg') no-repeat center center;
+    background-size: cover;
+  }
+  
+  /* Tarjeta de inicio de sesión */
+  .login-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.453);
+    padding: 70px;
+    border-radius: 20px;
+    box-shadow: 1px 0px 5px 10px rgba(0, 0, 0, 0.123);
+    width: 600px;
+    border: 2px solid rgb(0, 0, 0);
+  }
+  
+  /* Logo a la izquierda */
+  .logo {
+    width: 350px;
+    margin-right: 10px;
+    margin-left: -30px;
+  }
+  
+  /* Contenedor de inputs y botones */
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Estilos para los inputs */
+  .inputUsuario,
+  .inputPass {
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #0b0b0b;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .inputUsuario {
+    position: relative;
+    top: -60px;
+  }
+  
+  .inputPass {
+    position: relative;
+    top: -55px;
+  }
+  
+  /* Olvidaste tu contraseña */
+  .password {
+    position: relative;
+    font-size: 14px;
+    color: black;
+    margin-bottom: 10px;
+    top: -40px;
+  }
+  
+  /* Estilo para los iconos de Microsoft y Google */
+  .social-login {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 15px;
+  }
+  
+  .icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    top: -30px;
+  }
+  
+  /* Botones */
+  .button1 {
+    width: 100%;
+    max-width: 200px;
+    padding: 12px;
+    border-radius: 25px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    top: -25px;
+  }
+  
+  .primary {
+    background-color: #1362ff;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .secondary {
+    background-color: #a1b8e3;
+    color: white;
+  }
+  

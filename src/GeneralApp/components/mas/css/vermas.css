@@ -1,0 +1,124 @@
+/* vermas.css */
+
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-logo h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.navbar-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-menu ul li {
+  display: inline;
+}
+
+.navbar-menu ul li button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #2c3e50;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-menu ul li button:hover {
+  color: #3498db;
+  background-color: rgba(52, 152, 219, 0.1);
+  border-radius: 4px;
+}
+
+/* Secciones */
+.section-container {
+  padding: 4rem 2rem;
+  margin: 2rem 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.section-container h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.section-container p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Botón de volver */
+.justify-center {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.justify-center button {
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.justify-center button:hover {
+  background-color: #2980b9;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-container {
+  animation: fadeIn 0.5s ease-out;
+}

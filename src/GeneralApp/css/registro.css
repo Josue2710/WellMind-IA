@@ -1,0 +1,84 @@
+.registro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../assets/fondo-registro/Designer-registro.jpeg') no-repeat center center; 
+    background-size: cover;
+}
+.card-register {
+  display: flex;
+  flex-direction: column; /* Cambia a columna para apilar elementos verticalmente */
+  position: absol;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.453);
+  padding: 70px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 20px rgb(0, 0, 0, 10);
+  min-width: 100px; /* Ancho mínimo para que la tarjeta no sea demasiado pequeña */
+  min-height: 350px; /* Altura mínima */
+  border: 5px solid #77B9C4;
+}
+
+.logo-registro {
+  width: 300px; /* Tamaño más manejable para el logo */
+  position: absolute; /* Posiciona el logo de manera absoluta */
+  top: -10px; /* Mueve el logo hacia arriba, fuera de la tarjeta */
+  left: 50%; /* Centra el logo horizontalmente */
+  transform: translateX(-50%); /* Ajusta el centrado */
+  border-radius: 100%; /* Opcional: si quieres un logo circular */
+  border: 2px solid rgba(255, 255, 255, 0.025); /* Opcional: borde para resaltar el logo */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para resaltar el logo */
+}
+
+.usuregistro,
+.resspassregistro,
+.passregistro {
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #0b0b0b;
+  border-radius: 25px;
+  font-size: 16px;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  top: 20px;
+}
+
+.button {
+  width: 100%;
+  max-width: 200px;
+  padding: 12px;
+  border-radius: 25px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 250px;
+  position: absolute;
+}
+
+.third {
+  background-color: #A4C2E7;
+  color: rgb(53, 39, 39);
+  margin-bottom: 10px;  
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.forgot-password {
+  top: 80px;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.forgot-password:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.form-container {
+  top: 70px;
+  position: relative;
+}

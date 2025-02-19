@@ -428,7 +428,7 @@ const Home = () => {
                 {/* Input para mensajes */}
                 <div className="chat-input">
                   <input type="text" placeholder="Escribe un mensaje aquí..." />
-                  <button>➤</button>
+                  <button >➤</button>
                 </div>
               </div>
             </div>

@@ -389,9 +389,12 @@ nav li:hover {
     padding: 20px;
     background-color: #cb79ebaf;
     border: 5px solid black; 
-    border-radius: 0 20px 20px 0 
+    border-radius: 0 20px 20px 0;
+    overflow-y: auto; /* Habilita el scroll vertical */
+
+    
 }
-  
+
 /* Mensajes */
 .message {
     max-width: 60%;

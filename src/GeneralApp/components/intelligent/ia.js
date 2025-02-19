@@ -16,7 +16,7 @@ const Ia = () => {
   
     try {
       const response = await axios.post(
-        "http://localhost:3000/chat", // Verifica esta URL
+        "http://localhost:8000/chat", // Verifica esta URL
         { userId, text: inputText },
         {
           headers: {

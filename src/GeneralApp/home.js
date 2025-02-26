@@ -292,27 +292,27 @@ const Home = () => {
                   </div>  
 
                   <div className="service-card">
-                    <div className="icon-container">
-                      <svg
-                        className="icon"
-                        width="40"
-                        height="40"
-                        viewBox="0 0 64 64"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
+                  <div className="icon-container">
+                        <svg
+                          className="icon"
+                          width="40"
+                          height="40"
+                          viewBox="0 0 64 64"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
 
-                      <circle cx="32" cy="32" r="30" fill="#1AA9B5" stroke="black" strokeWidth="2" />
+                        <circle cx="32" cy="32" r="30" fill="#1AA9B5" stroke="black" strokeWidth="2" />
 
                 
-                      <g transform="translate(20, 20) scale(1.2)">
-                          <ath
+                        <g transform="translate(20, 20) scale(1.2)">
+                          <path
                             d="M10 0L11.6573 6.55861L17.8183 3.7651L13.7239 9.15005L19.7493 12.2252L12.9863 12.3815L14.3388 19.0097L10 13.8197L5.66116 19.0097L7.01367 12.3815L0.250721 12.2252L6.27611 9.15005L2.18168 3.7651L8.34271 6.55861L10 0Z"
                             fill="white"
                           />
-                          </g>
-                        </svg>
-                      </div>
-
+                        </g>
+                      </svg>
+                    </div>
+                    
                       <div className="text-title">
                         Rutinas para el Bienestar
                       </div>

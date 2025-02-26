@@ -1,39 +1,42 @@
 import React, { useState } from "react";
 import axios from "axios"; // Importar axios para realizar solicitudes HTTP
+import { useNavigate } from "react-router-dom"; // Importar useNavigate para la navegación
 import "../../css/home.css";
 
-const Ia = () => {
+const AR = () => {
+  const navigate = useNavigate();
   const [messages, setMessages] = useState([]);
   const [inputText, setInputText] = useState("");
-  const userId = "admin"; // Aquí puedes obtenerlo de tu autenticación
+  const userId = "admin";
 
+  // Función para manejar el envío de mensajes
   const handleSendMessage = async () => {
     if (!inputText.trim()) return;
-  
+
     const newMessages = [...messages, { role: "user", content: inputText }];
     setMessages(newMessages);
     setInputText("");
-  
+
     try {
       const response = await axios.post(
-        "http://localhost:8000/chat", // Verifica esta URL
+        "http://localhost:8000/chat",
         { userId, text: inputText },
         {
           headers: {
-            "Authorization": `Bearer ${localStorage.getItem("token")}`, // Si aplicas autenticación
+            Authorization: `Bearer ${localStorage.getItem("token")}`, // Si aplicas autenticación
             "Content-Type": "application/json",
           },
         }
       );
-  
+
       const aiResponse = response.data?.response; // Evita error si response no existe
-  
+
       if (!aiResponse) throw new Error("Respuesta vacía del backend");
-  
+
       setMessages([...newMessages, { role: "bot", content: aiResponse }]);
     } catch (error) {
       console.error("Error en la comunicación con el backend:", error);
-  
+
       // Verifica si el error viene de Axios
       if (error.response) {
         console.error("Detalles del error:", error.response.data);
@@ -44,10 +47,19 @@ const Ia = () => {
       }
     }
   };
-  
+
+  // Función para volver al home
+  const handleBackhome = () => {
+    navigate("/home"); // Cambia "/home" por la ruta correcta
+  };
 
   return (
     <section className="chatbot">
+      {/* Botón para volver al home */}
+      <button onClick={handleBackhome} className="back-home-btn">
+        Volver al Home
+      </button>
+
       <div className="chat-container">
         {/* Panel lateral */}
         <aside className="sidebar">
@@ -79,6 +91,7 @@ const Ia = () => {
               placeholder="Escribe un mensaje aquí..."
               value={inputText}
               onChange={(e) => setInputText(e.target.value)}
+              onKeyPress={(e) => e.key === "Enter" && handleSendMessage()} // Enviar mensaje al presionar Enter
             />
             <button onClick={handleSendMessage}>➤</button>
           </div>
@@ -88,4 +101,4 @@ const Ia = () => {
   );
 };
 
-export default Ia;
+export default AR;

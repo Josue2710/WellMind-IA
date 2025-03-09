@@ -29,10 +29,6 @@ const Nosotros = () => {
     navigate("/ar");
   };
 
-  const handlecontac = () => {
-    navigate("/contacto");
-  };
-
   return (
     <div className="home-container">
       {/* Encabezado */}
@@ -49,7 +45,6 @@ const Nosotros = () => {
             <li onClick={handleServis}>Servicios</li>
             <li onClick={handleIA}>IA</li>
             <li onClick={handleAR}>AR</li>
-            <li onClick={handlecontac}>Contactos</li>
           </ul>
         </nav>
       </header>

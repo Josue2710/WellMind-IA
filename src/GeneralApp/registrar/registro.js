@@ -1,7 +1,7 @@
 import React from "react";
-import { useNavigate } from "react-router-dom"; // Importa useNavigate para la redirección
-import WellMindIA from "../assets/logo principal/wellmind logo.png"; // Importa el logo
-import "../css/registro.css"; // Importa el archivo CSS
+import { useNavigate } from "react-router-dom"; 
+import WellMindIA from "../assets/logo principal/wellmind logo.png"; 
+import "../css/registro.css"; 
 
 const Registro = () => {
   const navigate = useNavigate(); // Inicializa useNavigate y asigna a la variable `navigate`

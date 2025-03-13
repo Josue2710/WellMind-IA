@@ -27,10 +27,13 @@ const Nosotros = () => {
 
   const handleAR = () => {
     navigate("/ar");
+<<<<<<< HEAD
+=======
   };
 
   const handlecontac = () => {
     navigate("/contacto");
+>>>>>>> 2eec43f037a51111ea693f2bac3f891e1e7835b9
   };
 
   return (
@@ -49,7 +52,6 @@ const Nosotros = () => {
             <li onClick={handleServis}>Servicios</li>
             <li onClick={handleIA}>IA</li>
             <li onClick={handleAR}>AR</li>
-            <li onClick={handlecontac}>Contactos</li>
           </ul>
         </nav>
       </header>

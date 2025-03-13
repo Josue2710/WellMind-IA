@@ -7,8 +7,8 @@ import "../css/login.css";
 
 const Login = () => {
   const navigate = useNavigate(); 
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+  const [username, setUsername] = useState("admin");
+  const [password, setPassword] = useState("12345");
 
   // Manejar envío del formulario
   const handleLogin = async () => {
@@ -17,20 +17,27 @@ const Login = () => {
       return;
     }
 
+    // Simulación de respuesta del servidor
     try {
-      const response = await fetch("http://localhost:8000/auth/login", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ username, password })
+      // Simulamos un retraso en la respuesta como si fuera una llamada real al servidor
+      const simulatedResponse = new Promise((resolve) => {
+        setTimeout(() => {
+          if (username === "admin" && password === "12345") {
+            resolve({ ok: true, data: { token: "simulated-token" } });
+          } else {
+            resolve({ ok: false, message: "Credenciales incorrectas" });
+          }
+        }, 1000); // Simulamos un retraso de 1 segundo
       });
-      console.log("adsad")
-      const data = await response.json();
 
+      const response = await simulatedResponse;
+
+      // Aquí verificamos si la respuesta es exitosa
       if (response.ok) {
-        localStorage.setItem("token", data.token); // Guardar token
-        navigate("/home"); // Redirigir
+        localStorage.setItem("token", response.data.token); // Guardar token simulado
+        navigate("/home"); // Redirigir a la página de inicio
       } else {
-        alert(data.message || "Error en el inicio de sesión");
+        alert(response.message || "Error en el inicio de sesión");
       }
     } catch (error) {
       console.error("Error:", error);

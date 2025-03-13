@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+}
+
+.triangulos-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  width: 500px; /* Ajusta el tamaño */
+  top: -170px;
+}
+
+/* Estilos triangulo Analisis Emocional */
+.Analisis { 
+  align-items: center;
+  height: 385px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 210px;
+  position: relative;
+  left: 950px;
+}
+.Analisis img {
+  width: 200%;
+  height: 100%;
+  object-fit: contain; 
+}
+
+/* Estilos Triangulo Ejercicios de mindfulness */
+.Ejercicios{ 
+  align-items: center;
+  height: 385px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 210px;
+  position: relative;
+  left: 130px;
+}
+.Ejercicios img {
+  width: 200%;
+  height: 100%;
+  object-fit: contain; 
+}
+
+/* Estilos Triangulo Rutinas para tu bienestar */
+.Rutinas { 
+  align-items: center;
+  height: 380px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -20px;
+  left: 540px;
+}
+.Rutinas img {
+  width: 200%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+/* Estilos Triangulo Terapia Individual */
+.Terapia {
+  position: relative;
+  align-items: center;
+  height: 375px; 
+  display: flex;
+  justify-content: center;
+  top: 200px;
+  left: 540px;
+
+}
+.Terapia img {
+  width: 200%;
+  height: 100%; 
+  object-fit: contain;
+}
+
+/* Estilos Triangulo Recursos y recomendaciones */
+.Recursos{
+  align-items: center;
+  height: 340px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 135px;
+  top: -30px;
+}
+.Recursos img {
+  width: 190%; 
+  height: 100%; 
+  object-fit: contain;
+}
+
+/* Estilos Triangulo Seguimiento de Estado de Animo */
+.Animo {
+  align-items: center;
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 950px;
+  top: -60px;
+
+}
+.Animo img {
+  width: 190%; 
+  height: 100%; 
+  object-fit: contain;
+}

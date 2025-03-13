@@ -89,3 +89,9 @@ const Ia = () => {
 };
 
 export default Ia;
+
+
+/*Clave API */
+/*sk-proj-JbAvQ7ya6XmiUTfhWKubdM5j-KGJ9tECsoJkJ1sXu9nxIeH-Lg-
+OSUNTHzb09vOl-l6QsjYWxqT3BlbkFJqFRKLhqek6vxsBQJ2cOsiuv2qxlRZw
+5ycn9nSg70TFndKG7Emkw5iTbOXq6oT3fJgKGUlb5CAA */

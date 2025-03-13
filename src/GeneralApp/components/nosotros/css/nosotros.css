@@ -1,0 +1,119 @@
+header {
+    position: fixed; 
+    top: 0;
+    width: 1316px;
+}
+
+
+.sobre-nosotros {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1rem;
+    margin-top: 150px; 
+    padding: 90px;
+}
+  
+.contenido {
+    text-align: center;
+    max-width: 400px;
+}
+  
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 0.5rem;
+  }
+  
+  hr {
+    width: 150px;
+    height: 2px;
+    background-color: black;
+    border: none;
+    margin: 0 auto 1rem;
+  }
+  
+  p {
+    font-size: 0.875rem;
+    font-family: 'marcellus', sans-serif;
+    color: black;
+  }
+  
+  
+  .contenido {
+    position: relative;
+    z-index: 2; 
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .fondo-svg {
+    position: absolute;
+    bottom: -272.2px; 
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1; 
+    transform: scaleY(-1) translateY(20px);
+    filter: drop-shadow(0px 25px 15px rgba(0, 0, 0, 0.2)); 
+  }
+  
+  
+
+  .mision-vision-valores {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    gap: 20px;
+    padding: 90px;
+    margin-top: 100px;
+    top: 152px;
+    background-color: #22bba7;
+
+}
+
+  
+  .card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    max-width: 320px;
+    margin-top: 90px;
+    text-align: center;
+    border: 2px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .card img {
+    width: 100%;
+    border-radius: 15px;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    color: #333;
+  }
+  
+  p, ul {
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  ul {
+    text-align: left;
+    padding-left: 20px;
+  }
+  
+
+  .back-button {
+    position: relative;
+    top: 70px; /* Ajusta la posición vertical si es necesario */
+    margin: 0 auto; /* Centra horizontalmente */
+    display: flex;
+    justify-content: center; /* Centra el contenido del botón (si tiene texto o iconos) */
+    align-items: center; 
+}

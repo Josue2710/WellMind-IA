@@ -14,7 +14,6 @@ import IA from "./components/intelligent/ia.js";
 import Servicios from "./components/Servicio/servicios.js";
 import AR from "./components/realidad/AR.js"; 
 import Contactos from "./components/Info/Contactos.js";
-
 import Vermas from "./components/mas/vermas.js";
 
 const App = () => {
@@ -30,7 +29,7 @@ const App = () => {
         <Route path="/nosotros" element={<Nosotros/>} />  {/*  Sobre la App */} 
         <Route path="/ia" element={<IA/>} />    {/* Conversa con nuestra inteligencia artificial*/} 
         <Route path= "/servicio" element={<Servicios/>} />   {/* Cuales servicios brindamos al pais */} 
-        <Route path= "/ar" element={<AR/>} />   {/*Apartadod e realidad aumentada */} 
+        <Route path= "/ar" element={<AR/>} />   {/*Apartado de realidad aumentada */} 
         <Route path= "/contacto" element={<Contactos/>} /> {/*Los desarrolladores*/} 
         <Route path= "/vermas" element={<Vermas/>} /> {/* Ver mas*/}
       </Routes>

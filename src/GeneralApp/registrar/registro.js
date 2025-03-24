@@ -23,7 +23,7 @@ const Registro = () => {
     }
 
     try {
-      const urlServer = process.env.URL_SERVER;
+      const urlServer = process.env.REACT_APP_URL_SERVER;
 
       const response = await fetch(urlServer + "/auth/register", {
         method: "POST",

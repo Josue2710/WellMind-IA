@@ -147,8 +147,8 @@ const Login = () => {
     }
 
     try {
-      const urlServer = process.env.URL_SERVER;
-
+      const urlServer = process.env.REACT_APP_URL_SERVER;
+      console.log(urlServer)
       const response = await fetch(urlServer + "/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },

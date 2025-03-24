@@ -136,8 +136,8 @@ import "../css/login.css";
 
 const Login = () => {
   const navigate = useNavigate(); 
-  const [username, setUsername] = useState("admin");
-  const [password, setPassword] = useState("1234");
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
   // Manejar envío del formulario
   const handleLogin = async () => {
@@ -152,7 +152,6 @@ const Login = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, password })
       });
-      console.log("adsad")
       const data = await response.json();
 
       if (response.ok) {

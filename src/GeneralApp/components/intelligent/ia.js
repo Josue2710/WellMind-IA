@@ -18,8 +18,10 @@ const AR = () => {
     setInputText("");
 
     try {
+      const urlServer = process.env.URL_SERVER;
+
       const response = await axios.post(
-        "http://localhost:8000/chat",
+        urlServer + "/chat",
         { userId, text: inputText },
         {
           headers: {

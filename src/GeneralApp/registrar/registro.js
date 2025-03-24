@@ -23,7 +23,9 @@ const Registro = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:8000/auth/register", {
+      const urlServer = process.env.URL_SERVER;
+
+      const response = await fetch(urlServer + "/auth/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, password })

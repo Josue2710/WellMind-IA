@@ -147,7 +147,9 @@ const Login = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:8000/auth/login", {
+      const urlServer = process.env.URL_SERVER;
+
+      const response = await fetch(urlServer + "/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, password })
